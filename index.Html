@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculadora">
+    <input type="text" class="pantalla" id="pantalla" value="0" disabled>
+    <div class="botones">
+      <button class="boton"></button>
+      <button class="boton" onclick="cuadrado()">X^2</button>
+      <button class="boton" onclick="aleatorio()">Rand</button>
+      <button class="boton" onclick="limpiar()">Clear</button>
+
+      <button class="boton" onclick="agregar('7')">7</button>
+      <button class="boton" onclick="agregar('8')">8</button>
+      <button class="boton" onclick="agregar('9')">9</button>
+      <button class="boton" onclick="agregar('/')">/</button>
+
+      <button class="boton" onclick="agregar('4')">4</button>
+      <button class="boton" onclick="agregar('5')">5</button>
+      <button class="boton" onclick="agregar('6')">6</button>
+      <button class="boton" onclick="agregar('*')">*</button>
+
+      <button class="boton" onclick="agregar('1')">1</button>
+      <button class="boton" onclick="agregar('2')">2</button>
+      <button class="boton" onclick="agregar('3')">3</button>
+      <button class="boton" onclick="agregar('-')">-</button>
+
+      <button class="boton" disabled></button>
+      <button class="boton" onclick="agregar('0')">0</button>
+      <button class="boton" onclick="calcular()">=</button>
+      <button class="boton" onclick="agregar('+')">+</button>
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <div class="footer">
+  © AR101017
+ </div>
+</body>
+</html>
